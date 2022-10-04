@@ -1,70 +1,40 @@
-# Getting Started with Create React App
+## NFT Marketplace
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This repo contains boilerplate code for making an NFT Marketplace using React and Solidity. Using this boilerplate, you can make a website using which NFTs (Non-Fungible Tokens) can be purchased and owned by users.
 
-## Available Scripts
+This is a project available on Codedamn which helps you to learn key concepts of Blockchain and Web3 by building an NFT Marketplace. If you want to have a hands on experience of building a DApp that can be used in real-world and learn key concepts of Blockchain and Web3 by practicing, feel free to attempt this cool challenge. 
 
-In the project directory, you can run:
+Feel free to check out the Codedamn Web3 Learning Path to learn more about How to Become a highly-skilled Blockchain Developer.
 
-### `npm start`
+## What's Already Done for You
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- The React App is already set up for you
+- A Hardhat Environment is already setu up using which you can communicate with Solidity Smart Contract and perform other different cryptography functions. 
+- The Smart Contract based on ERC-721 Standards is also written for you, implementing various functions that can be used in the code for adding different functionalities. 
+- The assets (images to be used as NFT and their metadata, and a question mark logo image).
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## What you need to do
 
-### `npm test`
+Your task is to make a frontend for the DApp (Decentralised App) using React JS. You can use Material UI for the purpose, or can also create a frontend from scratch. For reference of how the UI should potentially look like, you can refer the image below
+[![UI-Reference.png](https://i.postimg.cc/tRSByCYB/UI-Reference.png)](https://postimg.cc/V5tqWw9t)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+After making the frontend, use the functions defined in the smart contracts to mint an NFT, get current ID, etc.
 
-### `npm run build`
+The DApp should have following functions:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- Ability to authenticate users using Ethereum Wallet, like Metamask
+- Ability to mint an NFT by paying some amount(fixed in smart contract)
+- Hide NFTs with a question mark which are not yet minted. The Question Mark image can be found in assets.
+- Show minted NFTs from their IPFS address. For this, you need to upload the ```nfts``` folder under ```assets``` folder to the IPFS. You can use [Pinata](https://www.pinata.cloud/) to upload it to IPFS.
+- Keep track of the ID of each NFT minted.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## How to run the project
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+After cloning this repo, you need to follow these steps:
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- In the project folder, install required dependencies using ```npm install``` command.
+- Run ```npx hardhat node``` command to make a local blockchain, in which you can do development locally. It will give you some wallets to interact with.
+- Import any one of those provided wallets into your Ethereum Wallet. Make sure to have your network as ```localhost```
+- Run the ```deploy.js``` script under ```assets``` folder using ```npx hardhat run ./scripts/deploy.js --network hardhat``` to deploy the smart contract on local blockchain. You will get the smart contract address after deployment.
+- You will get the ABI of the smart contract under the ```artifacts``` folder in ```src```
+- Start modifying the ```App.js``` file in ```src``` to see some changes in the frontend.
