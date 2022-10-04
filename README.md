@@ -10,7 +10,7 @@ Feel free to check out the Codedamn Web3 Learning Path to learn more about How t
 
 - The React App is already set up for you
 - A Hardhat Environment is already setu up using which you can communicate with Solidity Smart Contract and perform other different cryptography functions. 
-- The Smart Contract based on ERC-721 Standards is also written for you, implementing various functions that can be used in the code for adding different functionalities. 
+- The A Basic Smart Contract based on ERC-721 Standards is also written for you.
 - The assets (images to be used as NFT and their metadata, and a question mark logo image).
 
 ## What you need to do
@@ -19,12 +19,12 @@ Your task is to make a frontend for the DApp (Decentralised App) using React JS.
 
 ![UI-Reference.png](https://raw.githubusercontent.com/navyansh007/nft-marketplace-project/master/UI%20Reference.png)
 
-After making the frontend, use the functions defined in the smart contracts to mint an NFT, get current ID, etc.
+After making the frontend, define the functions in the smart contract to mint an NFT in exchange of some crypto tokens (like Ethereum), and current token ID, etc. After defining all required functions in the smart contract, call those functions in the frontend to make a usable DApp.
 
 The DApp should have following functions:
 
 - Ability to authenticate users using Ethereum Wallet, like Metamask
-- Ability to mint an NFT by paying some amount(fixed in smart contract)
+- Ability to mint an NFT by paying some amount
 - Hide NFTs with a question mark which are not yet minted. The Question Mark image can be found in assets.
 - Show minted NFTs from their IPFS address. For this, you need to upload the ```nfts``` folder under ```assets``` folder to the IPFS. You can use [Pinata](https://www.pinata.cloud/) to upload it to IPFS.
 - Keep track of the ID of each NFT minted.
