@@ -1,4 +1,4 @@
-## NFT Marketplace
+# NFT Marketplace
 
 This repo contains boilerplate code for making an NFT Marketplace using React and Solidity. Using this boilerplate, you can make a website using which NFTs (Non-Fungible Tokens) can be purchased and owned by users.
 
@@ -16,6 +16,7 @@ Feel free to check out the Codedamn Web3 Learning Path to learn more about How t
 ## What you need to do
 
 Your task is to make a frontend for the DApp (Decentralised App) using React JS. You can use Material UI for the purpose, or can also create a frontend from scratch. For reference of how the UI should potentially look like, you can refer the image below
+
 [![UI-Reference.png](https://i.postimg.cc/tRSByCYB/UI-Reference.png)](https://postimg.cc/V5tqWw9t)
 
 After making the frontend, use the functions defined in the smart contracts to mint an NFT, get current ID, etc.
