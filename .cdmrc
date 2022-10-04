@@ -1,0 +1,3 @@
+tabs: ['src/App.js', 'contracts/CodeDamnNFT.sol']
+live-reload-browser: true
+terminal-one: npm install && npm start
