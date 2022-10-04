@@ -17,7 +17,7 @@ Feel free to check out the Codedamn Web3 Learning Path to learn more about How t
 
 Your task is to make a frontend for the DApp (Decentralised App) using React JS. You can use Material UI for the purpose, or can also create a frontend from scratch. For reference of how the UI should potentially look like, you can refer the image below
 
-[![UI-Reference.png](https://raw.githubusercontent.com/navyansh007/nft-marketplace-project/master/UI%20Reference.png)
+![UI-Reference.png](https://raw.githubusercontent.com/navyansh007/nft-marketplace-project/master/UI%20Reference.png)
 
 After making the frontend, use the functions defined in the smart contracts to mint an NFT, get current ID, etc.
 
